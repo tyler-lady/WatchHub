@@ -1,10 +1,33 @@
 import './App.css';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import PageWrapper from './components/wrappers/PageWrapper';
+
+import UnderConstruction from './components/pages/UnderConstruction';
+
+//TODO: design/develop main-page and auth-page wrappers
+  //finish routing/framework
+  //establish connection with API
+  //implement Material-UI
+  //implement Quill rich-text-editor for review writing
+
 function App() {
   return (
     <div className="App">
-      <h1>WatchHub</h1>
-      <h3>This application is currently under construction, but will be the future home of WatchHub. The app is intended to be an example project of how I, as a developer, would implement a client side of a streaming service.</h3>
+      <Router>
+        <Route 
+          exact={true}
+          path="/"
+          render={props => {
+            return(
+              <PageWrapper>
+                <UnderConstruction />
+              </PageWrapper>
+            )
+          }}
+        />
+      </Router>
+
     </div>
   );
 }
