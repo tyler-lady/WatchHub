@@ -1,23 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>WatchHub</h1>
+      <h3>This application is currently under construction, but will be the future home of WatchHub. The app is intended to be an example project of how I, as a developer, would implement a client side of a streaming service.</h3>
     </div>
   );
 }
